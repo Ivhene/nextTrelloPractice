@@ -1,3 +1,5 @@
+This project is used to practice Nextjs 14 full stack applications. It`s purpose is to give me an understanding of how to make full stack applications in Nextjs, while the finished product could also be useful in projects down the line. The project follows the tutorial from Code With Antonio https://www.youtube.com/watch?v=pRybm9lXW2c
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
