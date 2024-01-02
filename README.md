@@ -58,3 +58,8 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 ```
 
 You will also need to enable organizations within the application on Clerk
+
+## Database
+In the .env file you will need a DATABASE_URL variable for your database. I have personally used a MySQL database, and this will probably be the easiest one to use with the application. 
+
+The database is configured within the application using prisma. See documentation for how to connect with database https://www.prisma.io/nextjs
