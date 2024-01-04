@@ -1,9 +1,9 @@
 "use client";
 
 import { createBoard } from "@/actions/create-board";
-import { Button } from "@/components/ui/button";
+import { FormInput } from "@/components/forms/formInput";
+import { FormSubmit } from "@/components/forms/formSubmit";
 import { useAction } from "@/hooks/useAction";
-import { error } from "console";
 
 export default function Form() {
   const { execute, fieldErrors } = useAction(createBoard, {
@@ -23,14 +23,10 @@ export default function Form() {
   return (
     <>
       <form action={onSubmit}>
-        <input
-          id="title"
-          name="title"
-          required
-          placeholder="Enter a board title"
-          className="border border-black p-1"
-        />
-        <Button type="submit">Submit</Button>
+        <div className="flex flex-col space-y-2">
+          <FormInput label="Board Title" errors={fieldErrors} id="title" />
+        </div>
+        <FormSubmit>Save</FormSubmit>
       </form>
     </>
   );
